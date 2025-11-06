@@ -25,19 +25,20 @@
 
             int indV3 = 0;
 
-            for(int i=0; i<v3.Length; i++)
+           
+            for (int i = 0; i < v1.Length; i++) 
             {
-                for (int j = 0; j < v1.Length; j++)
+                for(int j=0; j<v2.Length; j++)
                 {
-                    for(int k=0; k<v2.Length; k++)
-                    {
-                        if (v1[j] == v2[k])
-                        {
-                            v3[indV3] = v1[j];
-                        }
-                    }
+                   if (v1[i] == v2[j])
+                   {
+                      v3[indV3] = v1[i];
+                      indV3 = indV3 + 1;
+                   }
                 }
+
             }
+
 
             for (int i = 0; i < v3.Length; i++) {
 
